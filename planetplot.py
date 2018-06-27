@@ -8,8 +8,8 @@ y = file[:,0]
 x = file[:,1]
 print(file2)
 
-y2 = file[:,0]
-x2 = file[:,1]
+y2 = file2[:,0]
+x2 = file2[:,1]
 
 figplot = pl.figure(figsize=(6,3))
 
@@ -20,8 +20,8 @@ axes1.set_ylabel('u (m/s)')
 axes1.set_xlabel('lat (pc)')
 axes1.plot(y,x, '--b')
 
-axes2.set_ylabel('lat (pc)')
-axes2.set_xlabel('u (m/s)')
+axes2.set_ylabel('u (m^2/s^2)')
+axes2.set_xlabel('lat (pc)')
 axes2.plot(y2,x2, '--g')
 
 pl.show()
